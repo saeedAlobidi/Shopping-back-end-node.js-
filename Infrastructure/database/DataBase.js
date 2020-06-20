@@ -1,21 +1,8 @@
 const sql = require('mssql')
-const config = {
-    user: 'mazad',
-    password: 'mazad',
-    server: '192.168.1.13', // You can use 'localhost\\instance' to connect to named instance
-    database: 'Mazad',
-
-
-}
-
+const config = require('config')
+  
 class dataBase {
-    constructor() {
-
-
-        this.instace = null;
-
-
-    }
+    constructor() {   this.instace = null;  }
 
     async Query(commands) {
         const pool = await new sql.ConnectionPool(config).connect();
@@ -50,8 +37,4 @@ class dataBase {
 }
 
 
-module.exports = {
-
-    dataBase
-
-};
+module.exports = {dataBase};
