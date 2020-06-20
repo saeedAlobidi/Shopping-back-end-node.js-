@@ -1,0 +1,21 @@
+{
+  "name": "shoppinp",
+  "version": "1.0.0",
+  "description": "backend for shopping app android and ios",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "keywords": [
+    "mms"
+  ],
+  "author": "saeed mohammed saleh al-obidi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
